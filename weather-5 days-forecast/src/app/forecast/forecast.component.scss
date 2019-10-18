@@ -1,0 +1,31 @@
+@import '../../styles';
+@import '../weather/weather.component';
+
+.wrapper{
+  width:90%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.lookCity{
+  width: 30%;
+  margin:2em 35%;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Roboto';
+}
+
+.day{
+  margin:0 2em;
+  font-family: 'Roboto';
+
+  img{
+    width:50%;
+    height: auto;
+    margin:0 25%;
+  }
+}

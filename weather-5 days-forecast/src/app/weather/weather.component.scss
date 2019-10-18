@@ -1,0 +1,83 @@
+@import '../../styles';
+
+.wrapper{
+  font:{
+    family:'Roboto';
+    // weight:100;
+  };
+  width: 30%;
+  height: 534px;
+  margin: 5em auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: $dark;
+  text-align: center;
+
+  img{
+    width: 60%;
+    margin:0 20%;
+  }
+
+  .city{
+    font:{
+      size:2.2em;
+      weight:100;
+    }
+  }
+
+  .temperature{
+    font:{
+      size:3.5em;
+      weight:100;
+    }
+  }
+
+  .description{
+    font:{
+      size:1.2em;
+      weight:100;
+    }
+  }
+
+  .tempM{
+    font: {
+      size:1.5em;
+      weight:100;
+    }
+  }
+
+}
+
+.lookCity{
+  width: 100%;
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+
+  .cityName{
+    flex:1 0 auto;
+    height:25px;
+    font: {
+      size:1em;
+      weight:100;
+    }
+    border:.5 solid $dark;
+    padding:.5em;
+    margin: 0;
+  }
+
+  .btn{
+    background-color: $blue;
+    border:0;
+    width:25%;
+    height:25px;
+    color:white;
+    cursor: pointer;
+    @include transition;
+
+    &:hover{
+      background-color: lighten($blue, 5%);
+    }
+  }
+}

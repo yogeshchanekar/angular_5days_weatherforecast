@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <h2 class="city">{{weatherClass?.cityName}}</h2>
+  <h1 class="temperature">{{weatherClass?.temp}}&deg;</h1>
+  <h4 class="description">{{weatherClass?.type}}</h4>
+  <img src="http://openweathermap.org/img/wn/10d@2x.png">
+  <div class="pan">
+    <div class="into temp">
+      <h4 class="tempMax tempM">temp min: {{weatherClass?.tempMin}}&deg;</h4>
+      <h4 class="tempMin tempM">temp max: {{weatherClass.tempMax}}&deg;</h4>
+    </div>
+  </div>
+  <form class="lookCity" (ngSubmit)=onSubmit(f) #f="ngForm">
+    <input type="text" class="cityName" name="city" ngModel #city="ngModel" placeholder="Name of a city">
+    <button class="btn" name="button">go</button>
+  </form>
+</div>

@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
+
+// define variables
+
+$blue: #4285f4;
+$green: #34a853;
+$yellow: #fbbc05;
+$red: #ea4335;
+$dark: rgb(37, 37, 37);
+
+//mixins
+
+@mixin transition {
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+html, body{
+  margin:0;
+  padding:0;
+  font-family:sans-serif;
+}
